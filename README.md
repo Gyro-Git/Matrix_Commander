@@ -1,43 +1,22 @@
 # Matrix Commander
 
+Matrix Commander is an open-source project dedicated to developing a customizable, 3D-printed wireless remote. This project is built around the Arduino line of microcontrollers.
 
-Matrix Commander is a customizable, open-source, and wireless keyboard-style remote control aimed at enhancing your multimedia experiences on your PC. Designed to make controlling your media hassle-free and effortless, it gives you the power to dictate your own multimedia experience.
+## About
 
-## Features
-* **Simplicity**: Just 7 buttons, each one with a meaningful function.
-* **Customizability**: Fully customizable buttons. Personalize the function of each button according to your preferences.
-* **Multifunctional**: Supports multiple layouts for different apps with seamless switching.
-* **Wireless Reprogramming**: Reprogram the functionality wirelessly, whenever you want.
-* **Long Battery Life**: Almost 1 year of battery life, with a rechargeable USB-C connection.
-* **Open Source**: Code and designs are open source. Feel free to make it your own!
+This project brings together several facets of technology, integrating hardware programming, 3D printing, and wireless connectivity. The end result is a functional human interface device(HID) that can serve as a keyboard or any other HID, making it compatible with any device that supports a regular keyboard.
 
-## Getting Started
+For detailed instructions on the construction and implementation of Matrix Commander, refer to our comprehensive guide:
 
-These instructions will get you a copy of the project up and running on your local machine.
+**[The Ultimate Wireless Keyboard Mark 2](https://www.instructables.com/The-Ultimate-Wireless-Keyboard-Mark-2/)**
 
-### Prerequisites
+## Key Features
 
-To set up Matrix Commander, you need to have the following:
+- Arduino programming - providing flexibility for customization
+- 3D printed design - allowing personalization
+- Functions as a human interface device
 
-* 3D printer
-* Soldering station/hot air station
-* Sanding paper
-* Electronics components as listed later in the instructions
+## Contributing
 
-### Installation
+Contributions are welcome and appreciated. Feel free to fork the project, make modifications, and submit a Pull Request.
 
-The step-by-step process to assemble and use Matrix Commander is provided in the `docs` folder. Please follow the instructions in the document `setup_guide.md`.
-
-## Contribution
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. We encourage everyone to contribute their ideas, thoughts, and code!
-
-Please make sure to update tests as appropriate before submitting a Pull Request.
-
-## Contact
-
-If you have any questions, feel free to reach out to us!
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
