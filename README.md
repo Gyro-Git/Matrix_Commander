@@ -1,6 +1,8 @@
 # Matrix Commander
 
 Matrix Commander is an open-source project dedicated to developing a customizable, 3D-printed wireless remote. This project is built around the Arduino line of microcontrollers.
+![Matrix Commander](/assets/preview1.png)
+![Matrix Commander render](/assets/preview2.png)
 
 ## About
 
