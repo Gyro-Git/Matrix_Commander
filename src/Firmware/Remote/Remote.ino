@@ -254,22 +254,6 @@ void checkButtons() {       //Scans which button is pressed and sends message
     input = false;
     return;
   }
-  
-  /*if (bouncerB.fell()) {
-    message = 2;
-  }
-
-  if (bouncerX.fell()) {
-    message = 3;
-  }
-
-  if (bouncerY.fell()) {
-    message = 4;
-  }
-
-  if (bouncerZ.fell()) {
-    message = 5;
-  }*/
 
   if (bouncerM.fell()) {
     changeMode();
