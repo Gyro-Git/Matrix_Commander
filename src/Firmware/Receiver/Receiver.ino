@@ -17,7 +17,7 @@ void setup()
   Consumer.begin();
   if (!radio.begin()) //if radio can't be found turn on all LEDs and do nothing.
   {
-    while (1); // Wait here forever. MUST BE CHANGED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    while (1); // Radio can't be initialized. Reset necessary
     Keyboard.print("Dongle is broken");
   }
   radio.setPALevel(RF24_PA_MAX);  //adjustable power level
