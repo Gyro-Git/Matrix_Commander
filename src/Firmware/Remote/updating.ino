@@ -36,31 +36,13 @@ void receiveUpdate() {
       return;
     }
   }
-  /*for ( int i = 0; i < 32;  ++i ) {
-    EEPROM.write(i*4,i);
-  }*/
   UpdateAnimmation();
 }
 
 
 void checkForUpdate() {
-  //attachInterrupt(digitalPinToInterrupt(2), isr, CHANGE);
-  //attachInterrupt(digitalPinToInterrupt(3), isr, CHANGE);
   int currentProgram = 0;
   int totalPrograms = 0;
-
-  /*radio.startListening();
-    unsigned long startedWaitingAt = millis();
-    while (!radio.available()) {
-    if (millis() - startedWaitingAt > listenTime ) {
-      return;
-    }
-    if (input) {
-      Awaken = true;
-      radio.stopListening();
-      return;
-    }
-    }*/
   byte dataRx;
   byte dataTx = 8; //sending 8 means the remote is about to check the current configuration
   if (!radio.write( &dataTx, sizeof(byte))) //if communication is interrupted, check for update will stop
@@ -116,24 +98,6 @@ void checkForUpdate() {
 void UpdateAnimmation() {
   byte waitTime = 5;
   int light = 0;
-
-  /*int cycles = 255;
-    float curRed = float(Red) * Bright;
-    float depRed = curRed / float(cycles);
-    float curGreen = float(Green) * Bright;
-    float depGreen = curGreen / float(cycles);
-    float curBlue = float(Blue) * Bright;
-    float depBlue = curBlue / float(cycles);
-    for (int i = 0; i < cycles; i++) {  //dimming current lights
-    curRed -= 1;
-    curGreen -= 1;
-    curBlue -= 1;
-    analogWrite(redPin, int(curRed));
-    analogWrite(greenPin, int(curGreen));
-    analogWrite(bluePin, int(curBlue));
-    delay(4);
-    }*/
-
   turnOffLight();
   delay(500);
   while (light < 160) {
